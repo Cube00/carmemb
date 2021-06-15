@@ -1,5 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+:root{
+  --primaryFont: 'Baloo 2', cursive;
+  --secondaryFont: 'Do Hyeon', sans-serif;
+  --thirdFont: 'Montserrat', sans-serif;
+  --color1: #e53f29;
+  --font13pt: 13pt;
+  --border1: #343434;;
+}
+
 *{
   margin:0;
   padding:0;
   box-sizing:border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+body {
+  background-color:#2f2f2f;
+}
+
+header {
+  position: relative;
+  width:100%;
+  margin:auto;
+  padding:11px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom:1px solid var(--border1);
+}
+
+header:after {
+  content: '';
+  position: absolute;
+  left:0;
+  bottom:-4px;
+  width:100%;
+  height:1px;
+  background-color:var(--border1);
+  z-index:2;
+}
+
+.logo img {
+  margin-top:4px;
+}
+
+.nav-b-ic-section {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li a {
+  margin:15px;
+  font-size: var(--font13pt);
+  font-family:var(--primaryFont);
+  color:#a7a7a7;
+  transition: 0.3s;
+}
+
+
+nav ul:hover li a {
+  color:#e5e5e5;
+}
+
+nav ul li a:hover{
+  color:var(--color1);
+}
+
+.booking-conv {
+  padding:17px 18px;
+  margin-left:60px;
+  background-color: var(--color1);
+  color:#fff;
+  font-family:var(--thirdFont);
+  font-size:10pt;
+  border:none;
+  outline: none;
+  cursor:pointer;
+}
+
+.booking-icon {
+  float:left;
+  margin-top:2px;
+  margin-right:12px;
+}
+
+.store-icon {
+  margin:3px 19px 0;
+  position: relative;
+}
+
+.item-number {
+  position: absolute;
+  top:0;
+  left:50%;
+  transform:translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:15px;
+  height:15px;
+  margin-top:-3px;
+  margin-left:1.5px;
+  background-color: var(--color1);
+  font-family:var(--secondaryFont);
+  font-size:11px;
+  color:#fff;
+  border-radius:50%;
+}
+
+.shop-icon {
+  margin-top:10px;
+  font-size:25px;
+  color:var(--color1);
+}
+
+.search {
+  margin-top:3px;
+  font-size:22px;
+  color:#a7a7a7;
+  border:none;
+  background:transparent;
+  cursor:pointer;
 }
