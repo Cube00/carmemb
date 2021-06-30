@@ -25,4 +25,31 @@ export const Global = createGlobalStyle`
     padding:0px;
     margin:0px;
   }
+
+  @keyframes BtnSl {
+    0%{
+      width:0;
+      transition-duration:0.3s;
+    }
+    20%{
+      width:50px;
+      transition-duration:0.3s;
+    }
+    40%{
+      width:100px;
+      transition-duration:0.3s;
+    }
+    60%{
+      width:150px;
+      transition-duration:0.3s;
+    }
+    80%{
+      width:200px;
+      transition-duration:0.3s;
+    }
+    100%{
+      width:200px;
+      transition-duration:0.3s;
+    }
+  }
 `;
